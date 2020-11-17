@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/17 02:14:23 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/17 04:59:39 by gneve            ###   ########.fr       */
+/*   Created: 2020/11/17 04:22:47 by gneve             #+#    #+#             */
+/*   Updated: 2020/11/17 04:59:36 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
-int	ft_isascii(int c)
+char	*ft_strchr(const char *s, int c)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	char	*str;
+
+	str = (char *)s;
+	while (*str != c)
+	{
+		if (*str == '\0')
+		{
+			return (NULL);
+		}
+		str++;
+	}
+	return (str);
 }
