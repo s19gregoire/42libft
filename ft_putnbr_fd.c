@@ -1,24 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 03:57:17 by gneve            ###   ########.fr       */
+/*   Created: 2020/11/22 03:57:45 by gneve             #+#    #+#             */
+/*   Updated: 2020/11/22 03:57:58 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-#include "stddef.h";
-#include "unistd.h";
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char const *s, int fd);
-#endif
+void	ft_putnbr_fd(int n, int fd)
+{
+	size_t	nn;
+
+	nn = 0;
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		if (n == -2147483648)
+		{
+			n = n + 1;
+			nn = 1;
+		}
+		n = n * -1;
+	}
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putchar_fd(((n + nn) % 10) + 48, fd);
+	}
+	else
+	{
+		ft_putchar_fd((n + nn) + 48, fd);
+	}
+}
