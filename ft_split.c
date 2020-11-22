@@ -6,13 +6,13 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:24:54 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 03:27:43 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/22 03:30:18 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		numstring(char const *s1, char c)
+static int		stringnmb(char const *s1, char c)
 {
 	int	comp;
 	int	cles;
@@ -48,7 +48,7 @@ static int		numchar(char const *s2, char c, int i)
 	return (lenght);
 }
 
-static char		**freee(char const **dst, int j)
+static char		**rf(char const **dst, int j)
 {
 	while (j > 0)
 	{
@@ -59,7 +59,7 @@ static char		**freee(char const **dst, int j)
 	return (NULL);
 }
 
-static char		**affect(char const *s, char **dst, char c, int l)
+static char		**aff(char const *s, char **dst, char c, int l)
 {
 	int	i;
 	int	j;
@@ -74,7 +74,7 @@ static char		**affect(char const *s, char **dst, char c, int l)
 			i++;
 		dst[j] = (char *)malloc(sizeof(char) * numchar(s, c, i) + 1);
 		if (dst[j] == NULL)
-			return (freee((char const **)dst, j));
+			return (rf((char const **)dst, j));
 		while (s[i] != '\0' && s[i] != c)
 			dst[j][k++] = s[i++];
 		dst[j][k] = '\0';
@@ -91,9 +91,9 @@ char			**ft_split(char const *s, char c)
 
 	if (s == NULL)
 		return (NULL);
-	l = numstring(s, c);
+	l = stringnmb(s, c);
 	dst = (char **)malloc(sizeof(char *) * (l + 1));
 	if (dst == NULL)
 		return (NULL);
-	return (affect(s, dst, c, l));
+	return (aff(s, dst, c, l));
 }
