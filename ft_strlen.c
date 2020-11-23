@@ -6,12 +6,12 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 01:38:47 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 04:00:05 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/23 03:35:06 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int i;
 

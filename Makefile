@@ -6,7 +6,7 @@
 #    By: gneve <gneve@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/23 03:10:16 by gneve             #+#    #+#              #
-#    Updated: 2020/11/23 03:27:55 by gneve            ###   ########.fr        #
+#    Updated: 2020/11/23 03:33:02 by gneve            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ ${NAME}: ${OBJS}
 	ar -rcs ${NAME} ${OBJS}
 
 clean:
-	RM *.o
+	 rm -f *.o
 
 fclean: clean
 	rm -f ${NAME}

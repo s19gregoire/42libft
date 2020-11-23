@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:33:11 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 03:59:18 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/23 03:38:06 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,31 +30,25 @@ int		len(long nb)
 	return (len);
 }
 
-char	*ft_itoa(int n)
+char					*ft_itoa(int n)
 {
-	char *str;
-	long	n;
-	int		i;
+	char			*ret;
+	unsigned char	is_negative;
+	unsigned char	len;
+	unsigned int	un;
 
-	i = len(n);
-	if (!(str = (char*)malloc(sizeof(char) * (i + 1))))
+	is_negative = n < 0;
+	un = is_negative ? -n : n;
+	len = get_nbr_of_digits(un) + is_negative;
+	if (!(ret = malloc(len + 1)))
 		return (NULL);
-	str[i--] = '\0';
-	if (n == 0)
+	ret[len] = '\0';
+	while (len--)
 	{
-		str[0] = 48;
-		return (str);
+		ret[len] = un % 10 + '0';
+		un /= 10;
 	}
-	if (n < 0)
-	{
-		str[0] = '-';
-		n = n * -1;
-	}
-	while (n > 0)
-	{
-		str[i] = 48 + (n % 10);
-		n = n / 10;
-		i--;
-	}
-	return (str);
+	if (is_negative)
+		ret[0] = '-';
+	return (ret);
 }
