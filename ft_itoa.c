@@ -6,13 +6,13 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:33:11 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/23 03:38:06 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/23 03:39:21 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		len(long nb)
+int		lenght(long nb)
 {
 	int		len;
 
@@ -39,7 +39,7 @@ char					*ft_itoa(int n)
 
 	is_negative = n < 0;
 	un = is_negative ? -n : n;
-	len = get_nbr_of_digits(un) + is_negative;
+	len = lenght(un) + is_negative;
 	if (!(ret = malloc(len + 1)))
 		return (NULL);
 	ret[len] = '\0';
