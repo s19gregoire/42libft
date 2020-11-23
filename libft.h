@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/23 03:02:16 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/23 03:29:27 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include "stddef.h";
-#include "unistd.h";
+#include "stddef.h"
+#include "unistd.h"
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
 unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size);
