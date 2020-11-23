@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/23 05:25:01 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/23 05:28:21 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,4 +52,5 @@ char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 int 			ft_toupper(int c);
 int				ft_isalnum(int c);
+int				ft_tolower(int c);
 #endif
