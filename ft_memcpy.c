@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 04:40:10 by neve              #+#    #+#             */
-/*   Updated: 2020/11/22 03:59:25 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/23 03:41:12 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 void *ft_memcpy(void *dest, const void * src, size_t n)
 {
-	unsigned int i;
-	char 		*dest;
-	const char	*source;
+	unsigned char	*s;
+	unsigned char	*d;
 
-	if (!n)
-	{
+	if (dest == src)
 		return (dest);
-	}
-	
+	s = (unsigned char *)src;
+	d = (unsigned char *)dest;
+	while (n--)
+		d[n] = s[n];
+	return (dest);
 }
