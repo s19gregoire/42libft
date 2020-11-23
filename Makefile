@@ -6,7 +6,7 @@
 #    By: gneve <gneve@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/23 03:10:16 by gneve             #+#    #+#              #
-#    Updated: 2020/11/23 03:19:02 by gneve            ###   ########.fr        #
+#    Updated: 2020/11/23 03:23:46 by gneve            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,4 +40,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, ${NAME}, clean, fclean, re
+.PHONY: all, clean, fclean, re
