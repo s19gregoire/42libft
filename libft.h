@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/24 05:15:35 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 05:21:34 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,12 @@ char			*ft_strjoin(char const *s1, char const *s2);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 int				ft_strlen(const char *str);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-int 			ft_strncmp(char *s1, char *s2, unsigned int n);
+int				ft_strncmp(char *s1, char *s2, unsigned int n);
 char			*ft_strnstr(const char *str, const char *to_find, size_t len);
-char 			*ft_strrchr(const char *s, int c);
+char			*ft_strrchr(const char *s, int c);
 char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
-int 			ft_toupper(int c);
+int				ft_toupper(int c);
 int				ft_isalnum(int c);
 int				ft_tolower(int c);
 #endif
