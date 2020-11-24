@@ -6,10 +6,9 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/24 04:59:20 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 05:11:34 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -24,10 +23,10 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char const *s, int fd);
 int				ft_atoi(const char *str);
 void			ft_bzero(void *s, size_t n);
-int 			ft_isalpha(char c);
+int				ft_isalpha(char c);
 int				ft_isascii(int c);
 int				ft_isprint(int c);
-int				t_isdigit(int c);
+int				ft_isdigit(int c);
 char			*ft_itoa(int n);
 void			*ft_calloc(size_t nmemb, size_t size);
 void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
