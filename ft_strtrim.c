@@ -6,11 +6,12 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:15:49 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 03:59:24 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 05:27:07 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static unsigned int	is_in_set(char c, char const *set)
 {
 	while (*set)
@@ -22,8 +23,7 @@ static unsigned int	is_in_set(char c, char const *set)
 	return (0);
 }
 
-char				*ft_strtrim(char const *s1, char const *set)
-{
+char				*ft_strtrim(char const *s1, char const *set){
 	int				i;
 	unsigned int	outstr_size;
 	char			*outstr_start;
