@@ -6,18 +6,15 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/24 02:32:50 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 04:56:06 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
 #include "stddef.h"
-
 #include "unistd.h"
-
 #include "stdlib.h"
 
 void			*ft_memset(void *b, int c, size_t len);

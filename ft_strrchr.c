@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 04:48:15 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/24 04:42:19 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 04:43:48 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	unsigned int 	i;
+	unsigned int	i;
 	char			*lastoc;
 
 	lastoc = NULL;
