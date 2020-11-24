@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 01:10:51 by neve              #+#    #+#             */
-/*   Updated: 2020/11/24 05:22:44 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 06:23:13 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		if (ptr[i] == c2)
 		{
 			return (ptr + i);
-			i++;
 		}
-		return (0);
+		i++;
 	}
 	return (0);
 }

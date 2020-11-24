@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 02:41:30 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 04:00:01 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 06:36:00 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,14 @@ char	*ft_strdup(char *src)
 	len = 0;
 	while (src[len])
 		len++;
-	str = (char*)malloc(sizeof(*str) * (len + 1));
+	if(!(str = (char*)malloc(sizeof(*str) * (len + 1))
+		return (NULL);
 	i = 0;
 	while (i < len)
 	{
 		str[i] = src[i];
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
