@@ -6,13 +6,13 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:33:11 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/23 03:39:21 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 04:20:34 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		lenght(long nb)
+int						lenght(long nb)
 {
 	int		len;
 

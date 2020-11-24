@@ -6,11 +6,12 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 04:27:30 by neve              #+#    #+#             */
-/*   Updated: 2020/11/22 03:59:29 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 02:26:37 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
@@ -21,5 +22,4 @@ void	ft_bzero(void *s, size_t n)
 		((char *)s)[i] = 0;
 		i++;
 	}
-	
 }
