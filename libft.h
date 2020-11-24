@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/24 05:13:59 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 05:15:35 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char			*ft_itoa(int n);
 void			*ft_calloc(size_t nmemb, size_t size);
 void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t len);
-void 			*ft_memchr(const void *s, int c, size_t n);
+void			*ft_memchr(const void *s, int c, size_t n);
 void			*ft_memmove(void *dst, const void *src, size_t len);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putendl_fd(char const *s, int fd);
