@@ -6,12 +6,12 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:10:43 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 04:00:03 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 04:36:31 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	unsigned int	s1_len;
