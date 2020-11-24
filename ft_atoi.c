@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 02:39:46 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 03:59:59 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 05:34:29 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,13 @@ int		ft_atoi(const char *str)
 	}
 	while (str[i] >= 48 && str[i] <= 57)
 	{
-		num = num * 10 + (str[i] - 48);
+		if ((num = num * 10 + (str[i] - 48)) < 0)
+		{
+			if (neg < 0)
+				return (0);
+			else
+				return(1);						
+		}
 		i++;
 	}
 	return (num * neg);
