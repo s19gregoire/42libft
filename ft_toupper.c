@@ -6,13 +6,13 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 02:25:28 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 04:00:10 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 04:41:07 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if ((c >= 'a' && c <= 'z'))
 		return (c - 32);

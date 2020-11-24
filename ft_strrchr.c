@@ -6,13 +6,13 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 04:48:15 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/22 04:00:23 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 04:42:19 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	unsigned int 	i;
 	char			*lastoc;
@@ -21,13 +21,13 @@ char *ft_strrchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 	{
-		if(s[i] == (char)c)
+		if (s[i] == (char)c)
 		{
 			lastoc = (char *)&s[i];
 		}
 		i++;
 	}
-	if((char)c == s[i])
+	if ((char)c == s[i])
 	{
 		return ((char *)&s[i]);
 	}
