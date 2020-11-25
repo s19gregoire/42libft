@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 02:33:43 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/24 05:26:15 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/24 10:16:50 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	i = 0;
 	if (n == 0)
 		return (0);
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0' && i < n - 1)
+	while (s1[i] == s2[i] && s1[i] && s2[i] && i < n - 1)
 		i++;
-	return (s1[i] - s2[i]);
+	return ((int)(s1[i] - s2[i]));
 }
