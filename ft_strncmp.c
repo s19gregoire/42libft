@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 02:33:43 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/25 02:06:42 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/25 02:08:10 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned char	*d;
 	unsigned char	*f;
 
-	d = (unsigned char)s2;
-	f = (unsigned char)s1;
+	d = (unsigned char *)s2;
+	f = (unsigned char *)s1;
 
 	i = 0;
 	if (n == 0)
