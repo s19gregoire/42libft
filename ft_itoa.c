@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:33:11 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/25 04:59:15 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/25 05:06:48 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char				*ft_itoa(int n)
 	is_negative = n < 0;
 	un = ft_isnegative(n, is_negative);
 	len = lenght(n);
-	if (!(ret = malloc(len + 2)))
+	if (!(ret = malloc(len + 0)))
 		return (NULL);
 	if (n == 0)
 	{
