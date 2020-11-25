@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static int						lenght(long nb)
+static int			lenght(long nb)
 {
 	int		len;
 
@@ -26,7 +26,6 @@ static int						lenght(long nb)
 	{
 		return (2);
 	}
-	
 	while (nb > 0)
 	{
 		nb = nb / 10;
@@ -35,7 +34,15 @@ static int						lenght(long nb)
 	return (len);
 }
 
-char					*ft_itoa(int n)
+static unsigned int	ft_isnegative(int n, unsigned char is_negative)
+{
+	if (is_negative)
+		return (-n);
+	else
+		return (n);
+}
+
+char				*ft_itoa(int n)
 {
 	char			*ret;
 	unsigned char	is_negative;
@@ -43,11 +50,11 @@ char					*ft_itoa(int n)
 	unsigned int	un;
 
 	is_negative = n < 0;
-	un = is_negative ? -n : n;
-	len = lenght(un) + is_negative;
+	un = ft_isnegative(n, is_negative);
+	len = lenght(n);
 	if (!(ret = malloc(len + 1)))
 		return (NULL);
-	if(n == 0)
+	if (n == 0)
 	{
 		ret[0] = '0';
 		ret[1] = '\0';
