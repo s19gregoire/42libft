@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/24 07:11:57 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/27 06:12:46 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strdup(char *src);
 char			*ft_strjoin(char const *s1, char const *s2);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
-int				ft_strlen(const char *str);
+size_t			ft_strlen(const char *str);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int				ft_strncmp(char *s1, char *s2, unsigned int n);
 char			*ft_strnstr(const char *str, const char *to_find, size_t len);
