@@ -6,13 +6,13 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 02:41:30 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/24 07:57:40 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/28 07:39:38 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		i;
 	int		len;

@@ -6,7 +6,7 @@
 /*   By: gneve <gneve@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 03:23:50 by gneve             #+#    #+#             */
-/*   Updated: 2020/11/27 06:12:46 by gneve            ###   ########.fr       */
+/*   Updated: 2020/11/28 07:39:46 by gneve            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void			ft_putnbr_fd(int n, int fd);
 void			ft_putstr_fd(char const *s, int fd);
 char			**ft_split(char const *s, char c);
 char			*ft_strchr(const char *s, int c);
-char			*ft_strdup(char *src);
+char			*ft_strdup(const char *src);
 char			*ft_strjoin(char const *s1, char const *s2);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlen(const char *str);
