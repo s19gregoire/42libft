@@ -18,7 +18,7 @@
 
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size);
+size_t    ft_strlcpy(char *dest, const char *src, size_t size);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char const *s, int fd);
 int				ft_atoi(const char *str);
